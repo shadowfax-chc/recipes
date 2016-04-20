@@ -1,6 +1,8 @@
 Recipes
 =======
 
+http://shadowfax-chc.github.io/recipes/
+
 To start:
 
 ```console
