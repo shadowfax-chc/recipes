@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recipes</title>
+    <link>http://shadowfax-chc.github.io/recipes/</link>
+    <description>Recent content on Recipes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Apr 2016 18:22:29 -0400</lastBuildDate>
+    <atom:link href="http://shadowfax-chc.github.io/recipes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>snappy salmon filets</title>
+      <link>http://shadowfax-chc.github.io/recipes/entree/snappy-salmon-filets/</link>
+      <pubDate>Tue, 19 Apr 2016 18:22:29 -0400</pubDate>
+      
+      <guid>http://shadowfax-chc.github.io/recipes/entree/snappy-salmon-filets/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; cup Soy Sauce&lt;/li&gt;
+&lt;li&gt;1 tbsp brown sugar&lt;/li&gt;
+&lt;li&gt;2 tbsp lemon juice&lt;/li&gt;
+&lt;li&gt;2 salmon filets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Combine soy sauce, brown sugar, lemon juice. Marinate salmon in mixture for 30
+to 40 minutes turning over once. Broil salmon 4 minutes on each side.&lt;/p&gt;
+
+&lt;p&gt;Source: Kikkoman Bottle&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
