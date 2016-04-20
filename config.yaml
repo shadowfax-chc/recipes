@@ -5,4 +5,4 @@ theme: "base16"
 contentdir: "content"
 layoutdir: "layouts"
 publishdir: "public"
-cononifyurls: true
+canonifyurls: true
