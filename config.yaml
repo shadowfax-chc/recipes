@@ -1,7 +1,7 @@
 baseurl: "http://shadowfax-chc.github.io/recipes"
 languageCode: "en-us"
 title: "Recipes"
-theme: "base16"
+theme: "fax"
 contentdir: "content"
 layoutdir: "layouts"
 publishdir: "public"
