@@ -6,3 +6,11 @@ contentdir: "content"
 layoutdir: "layouts"
 publishdir: "public"
 canonifyurls: true
+params:
+  navigation:
+    brand: Recipes
+  menu:
+    items:
+      -
+        url: /entrees/
+        name: Entrees

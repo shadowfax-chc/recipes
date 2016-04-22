@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+<meta name="keywords" content="{{ with .Keywords }}{{ delimit . "," }}{{ end }}">
+{{ .Hugo.Generator }}
+<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+{{ "<!-- Bootstrap Core CSS -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | absURL }}" type="text/css">
+{{ "<!-- Custom CSS -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "/css/style.css" | absURL }}" type="text/css">
+{{ "<!-- Custom Fonts -->" | safeHTML }}
+<link rel="stylesheet" href="{{ "/font-awesome/css/font-awesome.min.css" }}" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
