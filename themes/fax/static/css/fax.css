@@ -100,7 +100,6 @@ header {
     text-align: center;
     color: #fff;
     display: table;
-    min-height: 70%;
     position: relative;
     width: 100%;
     background-attachment: fixed;
@@ -110,6 +109,10 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+header .container {
+    min-height: 500px;
 }
 
 header .title {

@@ -1,9 +1,13 @@
 +++
 date = "2016-04-19T18:22:29-04:00"
 title = "snappy salmon filets"
+image = ""
+source = "kikkoman bottle"
 
 +++
 
+Simple salmon filets with a hint of sweetness.
+<!--more-->
 
 * 1/4 cup Soy Sauce
 * 1 tbsp brown sugar
@@ -12,6 +16,3 @@ title = "snappy salmon filets"
 
 Combine soy sauce, brown sugar, lemon juice. Marinate salmon in mixture for 30
 to 40 minutes turning over once. Broil salmon 4 minutes on each side.
-
-
-Source: Kikkoman Bottle
