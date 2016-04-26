@@ -122,7 +122,7 @@ header .title {
     font-size: 50px;
 }
 
-.list-item-wrapper {
+.list-item-background {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -130,10 +130,17 @@ header .title {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    border-bottom: 10px solid #333;
+}
+
+.list-item-wrapper {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.list-item-wrapper-dark {
+    background-color: rgba(0,0,0,0.5);
 }
 
 article.list-item {
     min-height: 200px;
-    background-color: rgba(255,255,255,0.4);
-    border-bottom: 10px solid #333;
 }
