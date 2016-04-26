@@ -109,7 +109,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    border-bottom: 10px solid #333;
+    border-bottom: 4px solid #333;
 }
 
 header .container {
@@ -136,7 +136,7 @@ footer {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    border-bottom: 10px solid #333;
+    border-bottom: 4px solid #333;
 }
 
 .list-item-wrapper {
