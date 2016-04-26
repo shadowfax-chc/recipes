@@ -1,0 +1,9 @@
+{{ "<!-- Hero -->" | safeHTML }}
+<header>
+    <div class="container">
+        <h1 class="title">
+            {{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}
+            {{ with .Site.Params.hero.subtitle }}<small>{{ . | markdownify }}</small>{{ end }}
+        </h1>
+    </div>
+</header>

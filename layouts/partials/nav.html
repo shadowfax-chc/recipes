@@ -1,0 +1,33 @@
+{{ "<!-- Navigation -->" | safeHTML }}
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        {{ "<!-- Brand and toggle get grouped for better mobile display -->" | safeHTML }}
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Tooggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                {{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}
+            </a>
+        </div>
+        {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+
+                {{ range .Site.Params.menu.items }}
+                <li>
+                    <a href="{{ .url }}">{{ .name | markdownify }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ "<!-- /.navbar-collapse -->" | safeHTML }}
+    </div>
+    {{ "<!-- /.container -->" | safeHTML }}
+</nav>

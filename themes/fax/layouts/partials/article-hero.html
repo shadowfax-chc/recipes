@@ -1,6 +1,0 @@
-{{ "<!-- Hero -->" | safeHTML }}
-<header style="background-image: url({{ $.Site.BaseURL }}img/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});">
-    <div class="container">
-        <h1 class="title">{{ .Title | markdownify }}</h1>
-    </div>
-</header>
