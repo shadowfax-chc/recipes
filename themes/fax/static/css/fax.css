@@ -3,7 +3,6 @@ body {
     font-family: "Source Code","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -120,4 +119,19 @@ header .title {
     padding-bottom: 50px;
     margin-bottom: 25px;
     font-size: 50px;
+}
+
+.list-item-wrapper {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+article.list-item {
+    min-height: 200px;
+    background-color: rgba(255,255,255,0.4);
 }

@@ -1,8 +1,8 @@
-<article class="list-item" itemscope itemtype="http://schema.org/Blog">
-  <h2 class="headline" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} (Draft){{ end }}</a></h2>
-  <div class="meta">
-  </div>
-  <section class="summary">
-    {{ .Summary }} {{ if .Truncated }} <a href="{{ .RelPermalink }}">Read More...</a>{{ end }}
-  </section>
-</article>
+<div class="list-item-wrapper" style="background-image: url({{ $.Site.BaseURL }}img/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});">
+    <article class="list-item text-center">
+        <h2 class="headline" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} (Draft){{ end }}</a></h2>
+        <section class="summary">
+        {{ .Summary }} {{ if .Truncated }} <a href="{{ .RelPermalink }}">Read More...</a>{{ end }}
+        </section>
+    </article>
+</div>
