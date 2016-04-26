@@ -1,5 +1,5 @@
 {{ "<!-- Hero -->" | safeHTML }}
-<header>
+<header style="background-image: url({{ .Site.BaseURL }}img/{{ with .Site.Params.image }}{{ . }}{{ else }}hero.jpg{{ end }});">
     <div class="container">
         <h1 class="title">
             {{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}

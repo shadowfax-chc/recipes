@@ -108,6 +108,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    border-bottom: 10px solid #333;
 }
 
 header .container {
@@ -134,4 +135,5 @@ header .title {
 article.list-item {
     min-height: 200px;
     background-color: rgba(255,255,255,0.4);
+    border-bottom: 10px solid #333;
 }
