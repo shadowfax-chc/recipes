@@ -14,3 +14,6 @@ params:
       -
         url: /entrees/
         name: Entrees
+  footer:
+    powerby: "Powered by [hugo](http://gohugo.io/)"
+    copyright: Copyright © 2016 Timothy Messier
