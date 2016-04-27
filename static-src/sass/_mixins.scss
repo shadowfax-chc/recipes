@@ -1,0 +1,39 @@
+@mixin hover-focus() {
+    &:hover,
+    &:focus { @content }
+}
+
+@mixin hover-focus-active() {
+    &:hover,
+    &:focus,
+    &:active { @content }
+}
+
+@mixin hover-focus-active-suffix($suffix) {
+    &:hover #{$suffix},
+    &:focus #{$suffix},
+    &:active #{$suffix} { @content }
+}
+
+@mixin empty-hover-focus-active() {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active { @content }
+}
+
+/// Mixin to prefix several properties at once
+/// @author Hugo Giraudel
+/// @param {Map} $declarations - Declarations to prefix
+/// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($declarations, $prefixes: (webkit moz o)) {
+  @each $property, $value in $declarations {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+
+    // Output standard non-prefixed declaration
+    #{$property}: $value;
+  }
+}

@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     wt = require('gulp-wt');
 
 var paths = {
+    watch: ['static-src/**/*.scss'],
     sass: ['static-src/**/*.scss', '!static-src/**/_*.scss'],
     css: ['static/css/*.css', '!static/css/*.min.css', '!static/css/bootstrap*.css'],
 };
@@ -15,6 +16,10 @@ gulp.task('wt', function() {
             css: 'static/css',
             fonts: 'static/fonts'
         }))
+        .on('error', function(error) {
+            console.log(error);
+            this.emit('end');
+        })
 });
 
 gulp.task('css-compress', ['wt'], function() {
@@ -30,7 +35,7 @@ gulp.task('css-compress', ['wt'], function() {
 gulp.task('css', ['css-compress']);
 
 gulp.task('watch', function() {
-    gulp.watch(paths.sass, ['css']);
+    gulp.watch(paths.watch, ['css']);
 });
 
 gulp.task('default', ['css']);
