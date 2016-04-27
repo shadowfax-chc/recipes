@@ -17,3 +17,6 @@ params:
   footer:
     powerby: "Powered by [hugo](http://gohugo.io/)"
     copyright: Copyright © 2016 Timothy Messier
+  hero:
+    title: Recipes
+    subtitle: A collection of recipes I have made / enjoyed / modified.
