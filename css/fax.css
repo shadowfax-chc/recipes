@@ -1,7 +1,46 @@
+@font-face {
+    font-family: Ailerons;
+    src: url("../fonts/Ailerons-Typeface.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Moonshiner;
+    src: url("../fonts/Moonshiner-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: KlinicSlabBook;
+    src: url("../fonts/KlinicSlabBook.otf") format("opentype");
+}
+
 body {
     overflow-x: hidden;
-    font-family: "Source Code","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Moonshiner";
     background-color: #666;
+    color: #e1e1e1;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+h1 small {
+    color: #e1e1e1;
+}
+
+h2 {
+    font-size: 45px;
+    color: #e1e1e1;
+}
+
+.summary {
+    font-size: 25px;
+    color: #c1c1c1;
 }
 
 .navbar-default {
@@ -10,7 +49,6 @@ body {
 }
 
 .navbar-default .navbar-brand {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
 }
 
@@ -18,7 +56,7 @@ body {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #000;
 }
 
 .navbar-default .navbar-collapse {
@@ -26,8 +64,8 @@ body {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #000;
+    background-color: #000;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -36,12 +74,11 @@ body {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #000;
 }
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -50,13 +87,13 @@ body {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: #000;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    background-color: #000;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -97,6 +134,7 @@ body {
 }
 
 header {
+    font-family: "KlinicSlabBook";
     text-align: center;
     color: #fff;
     display: table;
@@ -109,7 +147,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    border-bottom: 4px solid #333;
+    border-bottom: 4px solid #000;
 }
 
 header .container {
@@ -120,7 +158,7 @@ header .title {
     padding-top: 100px;
     padding-bottom: 50px;
     margin-bottom: 25px;
-    font-size: 50px;
+    font-size: 90px;
 }
 
 footer {
@@ -136,16 +174,61 @@ footer {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    border-bottom: 4px solid #333;
+    border-bottom: 4px solid #000;
 }
 
 .list-item-wrapper {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.4);
+}
+
+.list-item-wrapper h2 {
+    color: #222;
+}
+
+.list-item-wrapper .summary {
+    color: #000;
+}
+
+.list-item-wrapper:hover,
+.list-item-wrapper:focus,
+.list-item-wrapper:active {
+    background-color: rgba(128,128,128,0.5);
+}
+
+.list-item-wrapper:hover  h2,
+.list-item-wrapper:focus  h2,
+.list-item-wrapper:active h2 {
+    color: #e1e1e1;
+}
+
+.list-item-wrapper:hover  .summary,
+.list-item-wrapper:focus  .summary,
+.list-item-wrapper:active .summary {
+    color: #c1c1c1;
 }
 
 .list-item-wrapper-dark {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
+
+.list-item-wrapper-dark:hover,
+.list-item-wrapper-dark:focus,
+.list-item-wrapper-dark:active {
+    background-color: rgba(64,64,64,0.7);
+}
+
+.list-item-wrapper-dark:hover  h2,
+.list-item-wrapper-dark:focus  h2,
+.list-item-wrapper-dark:active h2 {
+    color: #222;
+}
+
+.list-item-wrapper-dark:hover  .summary,
+.list-item-wrapper-dark:focus  .summary,
+.list-item-wrapper-dark:active .summary {
+    color: #000;
+}
+
 
 article.list-item {
     min-height: 200px;
