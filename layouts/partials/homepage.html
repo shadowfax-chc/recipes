@@ -2,11 +2,11 @@
 <main role="main" class="homepage">
 
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
             {{ partial "hero.html" . }}
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
             <div class="article-list">
             {{ range $index, $element := first 10 .Data.Pages }}
                 <div class="list-item-background" style="background-image: url({{ $.Site.BaseURL }}img/{{ with $element.Params.image }}{{ . }}{{ else }}default.jpg{{ end }});">
