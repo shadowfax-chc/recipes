@@ -1,47 +1,23 @@
 {{ $baseurl := .Site.BaseURL }}
 <main role="main" class="homepage">
 
-  {{ partial "hero.html" . }}
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            {{ partial "hero.html" . }}
+        </div>
 
-  <div class="article-list">
-    {{ range $index, $element := first 10 .Data.Pages }}
-        <div class="list-item-background" style="background-image: url({{ $.Site.BaseURL }}img/{{ with $element.Params.image }}{{ . }}{{ else }}default.jpg{{ end }});">
-            <div class="list-item-wrapper{{ if modBool $index 2 }}-dark{{ end }}">
-              {{ partial "article-list-item.html" $element }}
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="article-list">
+            {{ range $index, $element := first 10 .Data.Pages }}
+                <div class="list-item-background" style="background-image: url({{ $.Site.BaseURL }}img/{{ with $element.Params.image }}{{ . }}{{ else }}default.jpg{{ end }});">
+                    <div class="list-item-wrapper{{ if modBool $index 2 }}-dark{{ end }}">
+                      {{ partial "article-list-item.html" $element }}
+                    </div>
+                </div>
+            {{ end }}
             </div>
         </div>
-    {{ end }}
-  </div>
-
-{{ with .Site.Taxonomies.categories }}
-
-  <h1 class="headline">Categories</h1>
-
-  <section class="categories">
-    {{ range $name, $value := . }}
-    <h2 class="category">
-      <a href="{{ $baseurl }}categories/{{ $name | urlize }}">{{ title $name }}</a>
-      <small>({{ .Count }})</small>
-    </h2>
-    {{ end }}
-  </section>
-
-{{ end }}
-
-{{ with .Site.Taxonomies.tags }}
-
-  <h1 class="headline">Tags</h1>
-
-  <section class="tags">
-    {{ range $name, $value := . }}
-    <span class="tag">
-      <a href="{{ $baseurl }}tags/{{ $name | urlize }}">{{ $name }}</a>
-      <small>({{ .Count }})</small>
-    </span>
-    {{ end }}
-  </section>
-
-{{ end }}
+    </div>
 
 </main>
 
