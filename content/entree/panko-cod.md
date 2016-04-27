@@ -2,7 +2,7 @@
 date = "2016-04-26T17:12:40-04:00"
 image = "panko-cod.jpg"
 source = "Panko"
-title = "panko cod"
+title = "Panko Cod"
 
 +++
 

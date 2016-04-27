@@ -1,6 +1,6 @@
 +++
 date = "2016-04-25T18:01:47-04:00"
-title = "sauteed shrimp"
+title = "Sauteed Shrimp"
 image = "sateed-shrimp.jpg"
 source = "http://www.marthastewart.com/319177/sauteed-shrimp"
 
