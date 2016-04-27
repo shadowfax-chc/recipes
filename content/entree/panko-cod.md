@@ -1,7 +1,7 @@
 +++
 date = "2016-04-26T17:12:40-04:00"
-image = ""
-source = ""
+image = "panko-cod.jpg"
+source = "Panko"
 title = "panko cod"
 
 +++
