@@ -154,14 +154,14 @@ header .title {
   .homepage .row {
     overflow: hidden;
   }
-  header {
+  header .index-hero {
     width: auto;
     display: block;
     padding-bottom: 100%;
     margin-bottom: -100%;
     border-right: 4px solid #000;
   }
-  header .container {
+  header .index-hero .container {
     width: auto;
   }
   .article-list {
