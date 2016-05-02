@@ -18,7 +18,8 @@
 body {
     overflow-x: hidden;
     font-family: "Moonshiner";
-    color: #e1e1e1;
+    color: #0A0A0A;
+    background-color: #EEE5DE;
 }
 
 a {
@@ -267,4 +268,20 @@ footer {
 
 article.list-item {
     min-height: 200px;
+}
+
+article.single {
+    font-family: "KlinicSlabBook";
+    padding: 50px 60px;
+    font-size: 24px;
+
+    li {
+        list-style: none;
+
+        &:before {
+            font-family: "FontAwesome";
+            content: "\f096";
+            padding-right: 8px;
+        }
+    }
 }
