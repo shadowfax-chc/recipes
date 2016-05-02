@@ -1,9 +1,7 @@
 {{ "<!-- Hero -->" | safeHTML }}
-<header class="index-hero" style="background-image: url({{ .Site.BaseURL }}img/{{ with .Site.Params.image }}{{ . }}{{ else }}hero.jpg{{ end }});">
-    <div class="container">
-        <h1 class="title">
-            {{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}
-            {{ with .Site.Params.hero.subtitle }}<br><small>{{ . | markdownify }}</small>{{ end }}
-        </h1>
-    </div>
+<header class="index-hero">
+    <h1 class="title">
+        {{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}
+        {{ with .Site.Params.hero.subtitle }}<br><small>{{ . | markdownify }}</small>{{ end }}
+    </h1>
 </header>

@@ -18,7 +18,6 @@
 body {
     overflow-x: hidden;
     font-family: "Moonshiner";
-    background-color: #666;
     color: #e1e1e1;
 }
 
@@ -129,64 +128,90 @@ h2 {
 }
 
 header {
+    background-attachment: scroll, fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/hero.jpg");
+    left: 0;
+
     font-family: "KlinicSlabBook";
     text-align: center;
     color: #fff;
-    display: table;
-    position: relative;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    @include prefix((
-        background-size: cover
-    ));
 
-    .container {
-        min-height: 500px;
-    }
+    position: fixed;
+    height: 100%;
+    width: 35%;
+    border-right: 4px solid #000;
 
     .title {
+        margin-top: 0px;
         padding-top: 100px;
         padding-bottom: 50px;
         margin-bottom: 25px;
-        font-size: 90px;
+        font-size: 60px;
     }
+    z-index: -1;
 }
 
-@media(min-width:969px) {
-    .col-lg-4,
-    .col-lg-8 {
-        padding: 0;
-    }
 
-    .homepage .row {
-        overflow: hidden;
-    }
-
-    header .index-hero {
-        width: auto;
-        display: block;
-        padding-bottom: 100%;
-        margin-bottom: -100%;
-        border-right: 4px solid #000;
-    }
-
-    header .index-hero .container {
-        width: auto;
-    }
-
-    .article-list {
-        overflow: hidden;
-        width: auto;
-        display: block;
-    }
+main {
+    margin-left: 35%;
 }
+
 
 footer {
-    border-top: 4px solid #000;
-    background-color: #666;
-    width: 100%;
+    width: 35%;
+    color: #000;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: right;
+    padding: 0px 20px 20px;
+
+    a {
+        @include empty-hover-focus-active {
+            color: #000;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+}
+
+@media(max-width: 980px){
+    header {
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: relative;
+        width: 100%;
+        border-right: none;
+
+        .title {
+            font-size: 90px;
+            margin-bottom: 0px;
+        }
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../img/hero.jpg");
+    }
 }
 
 .list-item-background {
