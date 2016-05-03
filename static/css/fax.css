@@ -276,3 +276,13 @@ article.single li:before {
 article.single a {
   color: #a0a0a0;
 }
+
+article.single .source {
+  font-family: "Moonshiner";
+}
+
+article.single h2 {
+  color: #a0a0a0;
+  font-family: "Moonshiner";
+  padding-bottom: 5px;
+}

@@ -9,6 +9,7 @@ source = "[Martha Stewart](http://www.marthastewart.com/319177/sauteed-shrimp)"
 Shrimp with red-pepper flakes and fresh herbs.
 <!--more-->
 
+## Ingredients
 
 * 1.5 lbs large shrimp
 * 2 tbsp olive oil
@@ -18,6 +19,8 @@ Shrimp with red-pepper flakes and fresh herbs.
 * pinch crushed red-pepper flakes
 * 1/2 cup dry white wine
 * salt and pepper
+
+## Directions
 
 Heat oil in large skillet. Add garlic and cook until soft, 1 to 2 minutes. Add
 shrimp, parsley, oregano, and red-pepper flakes. Cook until shrimp are pink and

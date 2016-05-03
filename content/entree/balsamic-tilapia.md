@@ -10,6 +10,8 @@ title = "Balsamic Tilapia"
 Tangy nutty tilapia with peppers and balsamic.
 <!--more-->
 
+## Ingredients
+
 * 2 tilapia fillets
 * 1 tbs olive oil
 * 1/2 yellow onion
@@ -17,6 +19,8 @@ Tangy nutty tilapia with peppers and balsamic.
 * 2 tbs balsamic vinegar
 * some crumbled blue cheese
 * salt and pepper
+
+## Directions
 
 Preheat oven to 350 degres F. Slice onion and pepper into strips. Cook in pan
 with olive oil. Once vegetables are softened, add balsamic vinegar, season with
