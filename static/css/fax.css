@@ -166,7 +166,7 @@ footer li {
   list-style: none;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
   header {
     background-attachment: fixed;
     background-position: center center;
@@ -271,4 +271,8 @@ article.single li:before {
   font-family: "FontAwesome";
   content: "\f096";
   padding-right: 8px;
+}
+
+article.single a {
+  color: #a0a0a0;
 }

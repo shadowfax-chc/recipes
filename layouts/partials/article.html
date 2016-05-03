@@ -5,5 +5,8 @@
         <section class="body">
             {{ .Content }}
         </section>
+        <seciont class="source">
+            Source: {{ .Params.source | markdownify }}
+        </section>
     </article>
 </main>
