@@ -1,7 +1,7 @@
 +++
 categories = ["entree"]
 date = "2016-05-02T19:48:41-04:00"
-image = ""
+image = "balsamic-tilapia.jpg"
 source = "[All Recipes](http://allrecipes.com/recipe/189966/balsamic-baked-tilapia/)"
 title = "Balsamic Tilapia"
 
