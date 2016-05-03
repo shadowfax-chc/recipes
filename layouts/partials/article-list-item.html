@@ -1,12 +1,12 @@
-<article class="list-item">
-    <div class="row text-center">
-        <a href="{{ .RelPermalink }}">
-        <h2 class="headline" itemprop="headline">
-            {{ .Title }}{{ if .Draft }} (Draft){{ end }}
-        </h2>
-        <section class="summary">
-            {{ .Summary }}
-        </section>
-        </a>
-    </div>
-</article>
+<div class="row">
+    <article class="list-item">
+            <a href="{{ .RelPermalink }}">
+            <h2 class="headline" itemprop="headline">
+                {{ .Title }}{{ if .Draft }} (Draft){{ end }}
+            </h2>
+            <section class="summary">
+                {{ .Summary }}
+            </section>
+            </a>
+    </article>
+</div>

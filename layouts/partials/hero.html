@@ -1,5 +1,5 @@
 {{ "<!-- Hero -->" | safeHTML }}
-<header class="index-hero">
+<header>
     <h1 class="title">
         {{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}
         {{ with .Site.Params.hero.subtitle }}<br><small>{{ . | markdownify }}</small>{{ end }}
