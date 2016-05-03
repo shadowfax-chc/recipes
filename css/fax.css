@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Moonshiner-Regular;
+  src: url("../fonts/Moonshiner-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: KlinicSlabBook;
+  src: url("../fonts/KlinicSlabBook.otf") format("opentype");
+}
+
 /* Reset */
 html {
   font-family: sans-serif;
@@ -1290,25 +1300,10 @@ td, th {
   }
 }
 
-@font-face {
-  font-family: Ailerons;
-  src: url("../fonts/Ailerons-Typeface.otf") format("opentype");
-}
-
-@font-face {
-  font-family: Moonshiner;
-  src: url("../fonts/Moonshiner-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: KlinicSlabBook;
-  src: url("../fonts/KlinicSlabBook.otf") format("opentype");
-}
-
 body {
   overflow-x: hidden;
-  font-family: "Moonshiner";
-  color: #0A0A0A;
+  font-family: "KlinicSlabBook";
+  color: #0a0a0a;
   background-color: #EEE5DE;
 }
 
@@ -1317,11 +1312,17 @@ a, a:hover, a:focus, a:active, a.active {
   text-decoration: none;
 }
 
+h1 {
+  font-family: "Moonshiner-Regular";
+}
+
 h1 small {
+  font-family: "KlinicSlabBook";
   color: #e1e1e1;
 }
 
 h2 {
+  font-family: "Moonshiner-Regular";
   font-size: 45px;
   color: #e1e1e1;
 }
@@ -1375,7 +1376,7 @@ footer ul {
 }
 
 footer a, footer a:hover, footer a:focus, footer a:active, footer a.active {
-  color: #000;
+  color: #a0a0a0;
 }
 
 footer li {
@@ -1415,9 +1416,6 @@ footer li {
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   border-top: 4px solid #000;
 }
@@ -1477,7 +1475,6 @@ article.list-item {
 }
 
 article.single {
-  font-family: "KlinicSlabBook";
   padding: 50px 60px;
   font-size: 24px;
 }
@@ -1497,11 +1494,10 @@ article.single a {
 }
 
 article.single .source {
-  font-family: "Moonshiner";
+  font-family: "Moonshiner-Regular";
 }
 
 article.single h2 {
   color: #a0a0a0;
-  font-family: "Moonshiner";
   padding-bottom: 5px;
 }
