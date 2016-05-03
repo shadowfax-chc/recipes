@@ -1,5 +1,9 @@
-@import './_mixins';
+@import 'variables';
+@import 'mixins';
 @import 'skel';
+
+@include font(Moonshiner-Regular);
+@include font(KlinicSlabBook);
 
 @include skel-breakpoints((
     xlarge: "(max-width: 1680px)",
@@ -14,44 +18,32 @@
     grid: true,
 ));
 
-@font-face {
-    font-family: Ailerons;
-    src: url("../fonts/Ailerons-Typeface.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Moonshiner;
-    src: url("../fonts/Moonshiner-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: KlinicSlabBook;
-    src: url("../fonts/KlinicSlabBook.otf") format("opentype");
-}
-
 body {
     overflow-x: hidden;
-    font-family: "Moonshiner";
-    color: #0A0A0A;
-    background-color: #EEE5DE;
+    font-family: "KlinicSlabBook";
+    color: $text-color;
+    background-color: $background-color;
 }
 
 a {
     @include empty-hover-focus-active {
-        color: #e1e1e1;
+        color: $light-text;
         text-decoration: none;
     }
 }
 
 h1 {
+    font-family: "Moonshiner-Regular";
     small {
-        color: #e1e1e1;
+        font-family: "KlinicSlabBook";
+        color: $light-text;
     }
 }
 
 h2 {
+    font-family: "Moonshiner-Regular";
     font-size: 45px;
-    color: #e1e1e1;
+    color: $light-text;
 }
 
 .summary {
@@ -75,7 +67,7 @@ header {
     position: fixed;
     height: 100%;
     width: 35%;
-    border-right: 4px solid #000;
+    border-right: 4px solid $border-color;
 
     .title {
         margin-top: 0px;
@@ -96,7 +88,7 @@ main {
 
 footer {
     width: 35%;
-    color: #000;
+    color: $darkest-text;
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -108,7 +100,7 @@ footer {
 
     a {
         @include empty-hover-focus-active {
-            color: #000;
+            color: $link-text;
         }
     }
 
@@ -156,10 +148,8 @@ footer {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    @include prefix((
-        background-size: cover
-    ));
-    border-top: 4px solid #000;
+    background-size: cover;
+    border-top: 4px solid $border-color;
 }
 
 .list-item-wrapper {
@@ -174,7 +164,7 @@ footer {
 
     }
     @include hover-focus-active-suffix('h2') {
-        color: #e1e1e1;
+        color: $light-text;
     }
 
     .summary {
@@ -210,7 +200,6 @@ article.list-item {
 }
 
 article.single {
-    font-family: "KlinicSlabBook";
     padding: 50px 60px;
     font-size: 24px;
 
@@ -225,16 +214,15 @@ article.single {
     }
 
     a {
-        color: #a0a0a0;
+        color: $link-text;
     }
 
     .source {
-        font-family: "Moonshiner";
+        font-family: "Moonshiner-Regular";
     }
 
     h2 {
-        color: #a0a0a0;
-        font-family: "Moonshiner";
+        color: $medium-text;
         padding-bottom: 5px;
     }
 }

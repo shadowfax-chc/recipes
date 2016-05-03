@@ -23,17 +23,9 @@
     &.active { @content }
 }
 
-/// Mixin to prefix several properties at once
-/// @author Hugo Giraudel
-/// @param {Map} $declarations - Declarations to prefix
-/// @param {List} $prefixes (()) - List of prefixes to print
-@mixin prefix($declarations, $prefixes: (webkit moz o)) {
-  @each $property, $value in $declarations {
-    @each $prefix in $prefixes {
-      #{'-' + $prefix + '-' + $property}: $value;
+@mixin font($name) {
+    @font-face {
+        font-family: $name;
+        src: url('../fonts/' + $name + '.otf') format('opentype');
     }
-
-    // Output standard non-prefixed declaration
-    #{$property}: $value;
-  }
 }
