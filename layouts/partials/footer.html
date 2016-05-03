@@ -1,7 +1,10 @@
 {{ "<!-- Footer section -->" | safeHTML }}
 <footer>
     <ul>
-        <li class="powerby">{{ with .Site.Params.footer.powerby }}{{ . | markdownify }}{{ end }}</li>
+        <li>Powered by</li>
+        {{ range .Site.Params.footer.powerby }}
+        <li class="powerby">{{ . | markdownify }}</li>
+        {{ end }}
         <li class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</li>
     <ul>
     <ul class="list-inline social-buttons">

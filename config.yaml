@@ -15,7 +15,9 @@ params:
         url: /entrees/
         name: Entrees
   footer:
-    powerby: "Powered by [hugo](http://gohugo.io/)"
+    powerby:
+      - '[hugo](http://gohugo.io/)'
+      - '[skel](http://skel.io)'
     copyright: Copyright © 2016 Timothy Messier
   hero:
     title: Recipes
