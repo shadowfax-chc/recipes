@@ -16,7 +16,8 @@
 body {
   overflow-x: hidden;
   font-family: "Moonshiner";
-  color: #e1e1e1;
+  color: #0A0A0A;
+  background-color: #EEE5DE;
 }
 
 a, a:hover, a:focus, a:active, a.active {
@@ -165,7 +166,7 @@ footer li {
   list-style: none;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
   header {
     background-attachment: fixed;
     background-position: center center;
@@ -254,4 +255,34 @@ footer li {
 
 article.list-item {
   min-height: 200px;
+}
+
+article.single {
+  font-family: "KlinicSlabBook";
+  padding: 50px 60px;
+  font-size: 24px;
+}
+
+article.single li {
+  list-style: none;
+}
+
+article.single li:before {
+  font-family: "FontAwesome";
+  content: "\f096";
+  padding-right: 8px;
+}
+
+article.single a {
+  color: #a0a0a0;
+}
+
+article.single .source {
+  font-family: "Moonshiner";
+}
+
+article.single h2 {
+  color: #a0a0a0;
+  font-family: "Moonshiner";
+  padding-bottom: 5px;
 }
