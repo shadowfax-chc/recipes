@@ -5,7 +5,7 @@
 <main role="main" class="homepage">
 
     <div class="article-list">
-    {{ range $index, $element := first 10 .Data.Pages }}
+    {{ range $index, $element := .Data.Pages }}
         <div class="list-item-background" style="background-image: url({{ $.Site.BaseURL }}img/{{ with $element.Params.image }}{{ . }}{{ else }}default.jpg{{ end }});">
             <div class="list-item-wrapper{{ if modBool $index 2 }}-dark{{ end }}">
               {{ partial "article-list-item.html" $element }}
