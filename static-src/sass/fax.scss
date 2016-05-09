@@ -205,10 +205,16 @@ article.single {
 
     li {
         list-style: none;
+        cursor: pointer;
 
         &:before {
             font-family: "FontAwesome";
             content: "\f096";
+            padding-right: 10px;
+        }
+
+        &.checked:before {
+            content: "\f046";
             padding-right: 8px;
         }
     }
