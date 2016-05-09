@@ -1481,11 +1481,17 @@ article.single {
 
 article.single li {
   list-style: none;
+  cursor: pointer;
 }
 
 article.single li:before {
   font-family: "FontAwesome";
   content: "\f096";
+  padding-right: 10px;
+}
+
+article.single li.checked:before {
+  content: "\f046";
   padding-right: 8px;
 }
 
