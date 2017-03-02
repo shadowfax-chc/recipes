@@ -1,10 +1,10 @@
-+++
+---
 date: "2016-04-19T18:22:29-04:00"
 title: "Snappy Salmon Filets"
 image: ""
 source: "kikkoman bottle"
 
-+++
+---
 
 Simple salmon filets with a hint of sweetness.
 <!--more-->
